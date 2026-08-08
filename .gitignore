@@ -24,3 +24,11 @@ Thumbs.db
 
 # Environment variables
 .env
+
+# Trained model
+models/*.pth
+
+# Dataset
+dataset/
+
+report.pdf
