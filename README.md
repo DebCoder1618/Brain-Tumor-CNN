@@ -64,3 +64,53 @@ tumor-detect-cnn/
 ├── .gitignore
 └── README.md
 ```
+
+## Usage
+
+### 1. Install dependencies
+
+Create and activate a virtual environment, then install the required packages:
+
+```bash
+pip install torch torchvision
+```
+
+### 2. Prepare the dataset
+
+Place the source dataset in the location expected by split_dataset.py, then run:
+
+```bash
+python src/split_dataset.py
+```
+
+### 3. Train the model
+
+```bash
+python src/train.py
+```
+
+The trained model is saved in the models/ directory.
+
+### 4. Evaluate the model
+
+```bash
+python src/test.py
+```
+
+### Technologies
+
+- Python
+- PyTorch
+- TorchVision
+- Git
+
+### Limitations
+
+The model is trained on a relatively small dataset and performs binary image classification. Its predictions should not be interpreted as medical diagnoses.
+
+### References
+
+- [PyTorch](https://pytorch.org/)
+- [TorchVision](https://docs.pytorch.org/vision/stable/)
+- [Python](https://www.python.org/)
+- [Kaggle - Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/datasets/arwabasal/brain-tumor-mri-detection?utm_source=chatgpt.com)
